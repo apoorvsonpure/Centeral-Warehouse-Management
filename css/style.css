@@ -1591,7 +1591,7 @@ section.social ul li {
 		font-size: 1.2em;
 	}
 	h2.title-w3, h3.title-w3 {
-		font-size: 2.2em;
+		font-size: 1em;
 	}
 	.ab-w3-agile-part, .ab-w3-agile-part:nth-child(2) {
 		min-height: 271px;
@@ -2561,4 +2561,8 @@ section.social ul li {
 /*-- //responsive-design --*/
 .menu__item {
 	
+}
+
+.tab-active {
+	display: block;
 }

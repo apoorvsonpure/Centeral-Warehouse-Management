@@ -8,53 +8,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 <html lang="en">
 <head>
-<style>
 
-
-/* Style the tab */
-.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-	width:55%;
-    background-color: #f1f1f1;
-}
-
-/* Style the buttons inside the tab */
-.tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 15px 25px;
-    transition: 0.3s;
-    font-size: 17px;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-    background-color: #ddd;
-	padding : 10px;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-    background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-   
-   
-}
-</style>
 
 <title>Centralised Warehouse Management</title>
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/Home.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -82,7 +42,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">  
-<div class="collapse navbar-collapse navbar-ex1-collapse">
+<div class="collapse navbar-collapse navbar-ex1-collapse bg-dark navbar-dark">
 						<ul class="nav navbar-nav navbar-right">
 							<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
 							<li class="hidden"><a class="page-scroll" href="#page-top"></a>	</li>
@@ -163,32 +123,40 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 	
 	
-				<!-- gallery -->
-	<div class="gallery" id="gallery">
-	 <p class="sub-text">Photo Gallery</p>
-			<h3 class="title-w3">Our Gallery</h3>
+				<!-- services -->
+	<div class="services" id="services">	 
+		<h3 class="title-w3 col-lg-12">Services</h3>
 		<div class="container">
-			<div class="gallery-grids carouselGallery-grid hidden-xs">
-				<div class="col-md-4 gallery-grid"   padding="10px"  width="20%">
+			<div class="container-fluid">
+				<div class="col-md-4"   padding="10px"  width="20%">
 					<div class="tab">
-						<button class="tablinks" onclick="openCity(event, 'London')">News</button>
-						<button class="tablinks" onclick="openCity(event, 'Paris')">stock prices</button>
+						<button class="tablinks" onclick="openCity(event, 'News')">News</button>
+						<button class="tablinks" onclick="openCity(event, 'Prices')">Stock Prices</button>
 						
 					</div>
 
-					<div id="London" class="tabcontent">
+					<div id="News" class="tabcontent tab-active">
 						<h3>NEWS</h3>
 						<ul>
 							<li>farmers not happy with modi</li>
 						    <li>new fertilizers with no ammonia makes farmer happy</li>
 							<li>yes!! more farmer are motivated adapt </li>
 						    <li>farmers suicide rate increases- makes modi init responsible</li>
-							<li>farmers not happy with modi</li>
+							<li>New Scheme for Seeds and Fertilizer</li>
+							<li>Subsidies on farming equipments</li>
+							<li>Crops must be Insured</li>							
+						</ul>
 					</div>
 
-					<div id="Paris" class="tabcontent">
-						<h3>Paris</h3>
-						<p>Paris is the capital of France.</p> 
+					<div id="Prices" class="tabcontent">
+						<h3>Prices</h3>
+						<ul>
+							<li>Wheat:  Rs 24/kg</li>
+						    <li>Barley: Rs 30/kg</li>
+							<li>Rice:   Rs 34/kg </li>
+						    <li>Corn:   Rs 40/kg</li>														
+						</ul>
+						
 					</div>
 
 					
@@ -209,12 +177,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					}
 					</script>
 					</div>
-				<div class="col-md-4 gallery-grid" padding="15px"  width="20%">
+				<div class="col-md-4" padding="15px"  width="20%">
 					<div class="row">
 						<div class="column">
 		
 						<p><b>contact details</b></p>
-						<address>plot no.19/B <br>Magenta complex<br> NEW METRO LINK Road<br>pin code: 462022<br>phone: 0755-2345679<br>Bhopal M.P</address></p>
+						<p><address>plot no.19/B <br>Magenta complex<br> NEW METRO LINK Road<br>pin code: 462022<br>phone: 0755-2345679<br>Bhopal M.P</address></p>
 						<p style="text-align:middle;">e-mail us at : dreamset.events@gmail.com</p>
 						</div>
 					</div>
